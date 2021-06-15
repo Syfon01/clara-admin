@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Twitter -->
+    <meta name="twitter:site" content="@themepixels">
+    <meta name="twitter:creator" content="@themepixels">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DashForge">
+    <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="twitter:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="http://themepixels.me/dashforge">
+    <meta property="og:title" content="DashForge">
+    <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
+
+    <meta property="og:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+
+    <!-- Meta -->
+    <meta name="description" content="Clara Beaurea De Change">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png">
+
+    <title>Clara Admin</title>
+
+    <!-- vendor css -->
+    <link href="./lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="./lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="./lib/jqvmap/jqvmap.min.css" rel="stylesheet">
+    <link href=".lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href=".lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="./assets/css/dashforge.css">
+    <link rel="stylesheet" href="./assets/css/dashforge.dashboard.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+  </head>
+  <body>
+
+    <aside class="aside aside-fixed">
+      <div class="aside-header">
+        <a href="../../index.html" class="aside-logo">
+          <img src="./assets/img/clara_logo.png" class="wd-150 ht-50 img-fluid"/>
+        </a>
+        <a href="" class="aside-menu-link">
+          <i data-feather="menu"></i>
+          <i data-feather="x"></i>
+        </a>
+      </div>
+      <div class="aside-body">
+        <div class="aside-loggedin">
+          <div class="d-flex align-items-center justify-content-start">
+            <a href="" class="avatar"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></a>
+            <div class="aside-alert-link">
+              <a href="" class="new" data-toggle="tooltip" title="You have 2 unread messages"><i data-feather="message-square"></i></a>
+              <a href="" class="new" data-toggle="tooltip" title="You have 4 new notifications"><i data-feather="bell"></i></a>
+              <a href="" data-toggle="tooltip" title="Sign out"><i data-feather="log-out"></i></a>
+            </div>
+          </div>
+          <div class="aside-loggedin-user">
+            <a href="#loggedinMenu" class="d-flex align-items-center justify-content-between mg-b-2" data-toggle="collapse">
+              <h6 class="tx-semibold mg-b-0">Seyi Kunle</h6>
+              <i data-feather="chevron-down"></i>
+            </a>
+            <p class="tx-color-03 tx-12 mg-b-0">Admin</p>
+          </div>
+          <div class="collapse" id="loggedinMenu">
+            <ul class="nav nav-aside mg-b-0">
+              <li class="nav-item"><a href="" class="nav-link"><i data-feather="edit"></i> <span>Edit Profile</span></a></li>
+              <li class="nav-item"><a href="" class="nav-link"><i data-feather="user"></i> <span>View Profile</span></a></li>
+              <li class="nav-item"><a href="" class="nav-link"><i data-feather="settings"></i> <span>Account Settings</span></a></li>
+              <li class="nav-item"><a href="" class="nav-link"><i data-feather="help-circle"></i> <span>Help Center</span></a></li>
+              <li class="nav-item"><a href="" class="nav-link"><i data-feather="log-out"></i> <span>Sign Out</span></a></li>
+            </ul>
+          </div>
+        </div><!-- aside-loggedin -->
+        <ul class="nav nav-aside">
+          <li class="nav-item "><a href="dashboard-one.html" class="nav-link"><i data-feather="shopping-bag"></i> <span>Dashboard</span></a></li>
+          <li class="nav-item active"><a href="transactions.html" class="nav-link"><i data-feather="globe"></i> <span>Transactions</span></a></li>
+          <li class="nav-item"><a href="customers.html" class="nav-link"><i data-feather="users"></i> <span>Customers</span></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="content ht-100v pd-0">
+      <div class="content-header">
+        <div class="content-search">
+          <i data-feather="search"></i>
+          <input type="search" class="form-control" placeholder="Search...">
+        </div>
+        <nav class="nav">
+          <a href="" class="nav-link"><i data-feather="help-circle"></i></a>
+          <a href="" class="nav-link"><i data-feather="grid"></i></a>
+          <a href="" class="nav-link"><i data-feather="align-left"></i></a>
+        </nav>
+      </div><!-- content-header -->
+
+      <div class="content-body">
+        <div class="container pd-x-0">
+          <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-30">
+            <div>
+              
+              <h4 class="mg-b-0 tx-spacing--1">Transactions</h4>
+              <p class="mg-b-0 tx-spacing--1">View all Transactions on Clara</p>
+            </div>
+            
+          </div>
+
+          <ul class="nav nav-line" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active pd-x-20" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">All <span class="badge">130</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pending-tab" data-toggle="tab" href="#pending" role="tab" aria-controls="pending" aria-selected="false">Pending <span class="badge">10</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="declined-tab" data-toggle="tab" href="#declined" role="tab" aria-controls="declined" aria-selected="false">Declined <span class="badge">22</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="approved-tab" data-toggle="tab" href="#approved" role="tab" aria-controls="approved" aria-selected="false">Completed <span class="badge">32</span></a>
+            </li>
+            
+            
+          </ul>   
+          <div class="tab-content  bd-t-0 pd-y-20" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="table-section">
+                <div class="card">
+                  <div class="card-header pd-x-15 pd-y-10">
+                    <div class="row justify-content-between">
+                      <div class="col-md-6 col-12 col-lg-6 ">
+                        <p class="tx-14 mb-0 tx-semibold pd-t-10">
+                          All Transactions
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body pd-10">
+                    <table class="table display">
+                      <thead>
+                        <tr class="tx-uppercase tx-12 tx-semibold">
+                          <th>S/N</th>
+                          <th>Transaction ID</th>
+                          <th>Transaction DATE</th>
+                          <th>Amount (N)</th>
+                          <th>STATUS</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>
+                            <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">Mar 6, 2021</p> </td>
+                          <td class=""><p class="tx-12 mb-0">22,000</p> </td>
+                          <td>
+                            <span class="badge badge-danger">Declined</span>
+                          </td>
+                          <td>   
+                            <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>
+                            <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">Mar 4, 2021</p></td>
+                          <td class=""><p class="tx-12 mb-0">29,000</p> </td>
+                          <td>
+                            <span class="badge badge-secondary">Pending</span>
+                          </td>
+                          <td>   
+                            <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>
+                            <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">April 4, 2021</p> </td>
+                          <td class=""><p class="tx-12 mb-0">56,000</p> </td>
+                          <td>
+                            <span class="badge badge-success">Completed</span>
+                          </td>
+                          <td>   
+                            <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>
+                            <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">Mar 4, 2021</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">12,000</p> </td>
+                          <td>
+                            <span class="badge badge-secondary">Pending</span>
+                          </td>
+                          <td>   
+                            <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td>
+                            <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">Mar 4, 2021</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">920,000</p> </td>
+                          <td>
+                            <span class="badge badge-success">Completed</span>
+                          </td>
+                          <td>   
+                            <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+  
+            <div class="tab-pane fade" id="pending" role="tabpanel" aria-labelledby="pending-tab">
+                <div class="table-section">
+                  <div class="card bg-transparent">
+                    <div class="card-header pd-x-15 pd-y-10">
+                      <div class="row justify-content-between">
+                        <div class="col-md-6 col-12 col-lg-6 ">
+                          <p class="tx-14 mb-0 tx-medium pd-t-10">
+                            Pending Transactions
+                          </p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="card-body pd-10">
+                      <table class="table display">
+                        <thead>
+                          <tr class="tx-uppercase tx-12 tx-semibold">
+                            <th>S/N</th>
+                            <th>Transaction ID</th>
+                            <th>Transaction DATE</th>
+                            <th>Amount (N)</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>
+                              <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                            </td>
+                            <td class=""><p class="tx-12 mb-0">Mar 6, 2021</p></td>
+                            <td class=""><p class="tx-12 mb-0">50,000</p>  </td>
+                            <td>   
+                              <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>
+                              <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                            </td>
+                            <td class=""><p class="tx-12 mb-0">Mar 4, 2021</p>
+                            </td>
+                            <td class=""><p class="tx-12 mb-0">22,000</p>  </td>
+                            <td>   
+                              <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>
+                              <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                            </td>
+                            <td class=""><p class="tx-12 mb-0">April 4, 2021</p>
+                            </td>
+                            <td class=""><p class="tx-12 mb-0">12,000</p>  </td>
+                            <td>   
+                              <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>
+                              <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                            </td>
+                            <td class=""><p class="tx-12 mb-0">Mar 4, 2021</p>
+                            </td>
+                            <td class=""><p class="tx-12 mb-0">41,000</p> </td>
+                            <td>   
+                              <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>
+                              <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                            </td>
+                            <td class=""><p class="tx-12 mb-0">Mar 4, 2021</p>
+                            </td>
+                            <td class=""><p class="tx-12 mb-0">29,000</p> </td>
+                            <td>   
+                              <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  
+                </div>
+              
+              </div>
+              
+            <div class="tab-pane fade" id="declined" role="tabpanel" aria-labelledby="declined-tab">
+              <div class="table-section">
+                <div class="card bg-transparent">
+                  <div class="card-header pd-x-15 pd-y-10">
+                    <div class="row justify-content-between">
+                      <div class="col-md-6 col-12 col-lg-6 ">
+                        <p class="tx-14 mb-0 tx-medium pd-t-10">
+                          Declined Transactions
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body pd-10">
+                    <table class="table display">
+                      <thead>
+                        <tr class="tx-uppercase tx-12 tx-semibold">
+                          <th>S/N</th>
+                          <th>Transaction ID</th>
+                          <th>Transaction DATE</th>
+                          <th>Amount (N)</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>
+                            <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">Mar 6, 2021</p></td>
+                          <td class=""><p class="tx-12 mb-0">50,000</p>  </td>
+                          <td>   
+                            <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>
+                            <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">Mar 4, 2021</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">22,000</p>  </td>
+                          <td>   
+                            <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>
+                            <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">April 4, 2021</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">12,000</p>  </td>
+                          <td>   
+                            <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>
+                            <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">Mar 4, 2021</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">41,000</p> </td>
+                          <td>   
+                            <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td>
+                            <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">Mar 4, 2021</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">29,000</p> </td>
+                          <td>   
+                            <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                
+              </div>
+            
+            </div>
+            
+            <div class="tab-pane fade" id="approved" role="tabpanel" aria-labelledby="approved-tab">
+            <p class="tx-14 tx-gray mg-b-30">Here are scheduled DC sittings. These sittings are yet to hold.</p>
+              <div class="table-section">
+                <div class="card">
+                  <div class="card-header pd-x-15 pd-y-10">
+                    <div class="row justify-content-between">
+                      <div class="col-md-6 col-12 col-lg-6 ">
+                        <p class="tx-14 mb-0 tx-medium pd-t-10">
+                          Completed Transactions
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body pd-10">
+                    <table class="table display">
+                      <thead>
+                        <tr class="tx-uppercase tx-12 tx-semibold">
+                          <th>S/N</th>
+                          <th>Transaction ID</th>
+                          <th>Transaction DATE</th>
+                          <th>Amount (N)</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>
+                            <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">Mar 6, 2021</p></td>
+                          <td class=""><p class="tx-12 mb-0">50,000</p>  </td>
+                          <td>   
+                            <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>
+                            <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">Mar 4, 2021</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">22,000</p>  </td>
+                          <td>   
+                            <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>
+                            <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">April 4, 2021</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">12,000</p>  </td>
+                          <td>   
+                            <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>
+                            <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">Mar 4, 2021</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">41,000</p> </td>
+                          <td>   
+                            <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td>
+                            <p class=" tx-medium tx-12 mb-0">#23487993</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">Mar 4, 2021</p>
+                          </td>
+                          <td class=""><p class="tx-12 mb-0">29,000</p> </td>
+                          <td>   
+                            <a href="./view_schedule-sitting.html" class="btn btn-outline-primary btn-sm pd-x-10 pd-y-2 tx-bold" type="button"> View</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                
+              </div>
+            
+            </div>
+          </div>
+         
+        </div><!-- container -->
+      </div>
+    </div>
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./lib/feather-icons/feather.min.js"></script>
+    <script src="./lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="./lib/jquery.flot/jquery.flot.js"></script>
+    <script src="./lib/jquery.flot/jquery.flot.stack.js"></script>
+    <script src="./lib/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="./lib/chart.js/Chart.bundle.min.js"></script>
+    <script src="./lib/jqvmap/jquery.vmap.min.js"></script>
+    <script src="./lib/jqvmap/maps/jquery.vmap.usa.js"></script>
+    
+    <script src="./assets/js/dashforge.js"></script>
+    <script src="./assets/js/dashforge.aside.js"></script>
+    <script src="./assets/js/dashforge.sampledata.js"></script>
+    <script src="./lib/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="./lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+    <script src="./lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+
+    <!-- append theme customizer -->
+    <script src="./lib/js-cookie/js.cookie.js"></script>
+    <script src="./assets/js/dashforge.settings.js"></script>
+    <script>
+      $(document).ready( function () {
+   $('.display').DataTable({
+     "paging": true,
+     "info": true,
+     "responsive": true,
+     "aoColumnDefs": [{
+         "bSortable": false,
+         "aTargets": [-1]
+     }],
+    //  "searching": false,
+      // "lengthChange": false,
+     "bInfo": true
+   });
+   
+   $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+     $('.display:visible').each( function(e) {
+       $(this).DataTable().columns.adjust().responsive.recalc();
+     });
+   });
+  
+      });
+</script>
+
+  </body>
+</html>
